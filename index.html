@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <section id="header"></section>
+    <section id="home"></section>
+    <section id="footer"></section>
+    <script src="js/bower_components/seajs/dist/sea.js"></script>
+    <script src="js/bower_components/underscore/underscore.js"></script>
+    <script>
+    seajs.config({
+        base: "./"
+    });
+    seajs.use("config/config.js", function(a) {
+        a.init();
+    })
+    </script>
+</body>
+
+</html>

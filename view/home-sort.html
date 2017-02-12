@@ -1,0 +1,26 @@
+##for(var k = 0; k
+< data.length; k++){## <div class="sort-name">
+    ##for(var j = 0; j
+    < data[k][0].length; j++){## <a href="#">{{data[k][0][j]}}</a>
+        ##}##
+        </div>
+        <div class="sort-content">
+            <div class="list clear">
+                ##for(var i = 1; i
+                < data[k].length; i++){## <div class="list-cell">
+                    <a class="list-img" href="#"><img class="lazy-img" src="{{data[k][i].imgSrc}}" alt=""></a>
+                    <img class="level fadeInDown" src="images/level05.png" alt="">
+                    <div class="list-txt">
+                        <p><span>{{data[k][i].small}}</span><a href="#">{{data[k][i].txt}}</a></p>
+                        <div class="price clear">
+                            <strong>{{data[k][i].price}}</strong>
+                            <span class="weight">{{data[k][i].weight}}</span>
+                            <span class="iconfont">&#xe604;{{data[k][i].hot}}</span>
+                        </div>
+                        <div class="buy"></div>
+                    </div>
+            </div>
+            ##}##
+        </div>
+        </div>
+        ##}##
